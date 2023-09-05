@@ -6,7 +6,7 @@ const getUsers = async () => {
         .then(response => response.json())
         .then(json => {
             innerHtml = json.data.map((user) => {
-                return `<div class="col-12 col-lg-3">
+                return `<div class="col-12 col-lg-3 col-md-6">
                             <div class="card text-center">
                                 <img src="${user.avatar}" class="card-img-top" alt="...">
                                 <div class="card-body">
